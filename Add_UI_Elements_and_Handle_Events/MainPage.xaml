@@ -25,11 +25,13 @@
 
                 <Button
                     Text="Display Text"
+                    Padding="5"
                     Grid.Column="0"
                     Clicked="OnDisplayClicked"/>
 
                 <Button
                     Text="Reset"
+                    Padding="5"
                     Grid.Column="1"
                     Clicked="OnResetClicked"/>
             </Grid>
