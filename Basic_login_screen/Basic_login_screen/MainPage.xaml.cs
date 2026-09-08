@@ -1,23 +1,32 @@
-﻿namespace Basic_login_screen;
-
-public partial class MainPage : ContentPage
+﻿namespace Basic_login_screen
 {
-	int count = 0;
-
-	public MainPage()
+	public partial class MainPage : ContentPage
 	{
-		InitializeComponent();
-	}
+		public MainPage()
+		{
+			InitializeComponent();
+		}
 
-	private void OnCounterClicked(object? sender, EventArgs e)
-	{
-		count++;
+		private void OnLoginClicked(object? sender, EventArgs e)
+		{
+			string userId = txtUserName.Text ?? string.Empty;
+			string password = txtPassword.Text ?? string.Empty;
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
+			if (userId == "Burns" && password == "Password1")
+			{
+				lblMessage.Text = $"Login successful {userId}";
+			}
+			else
+			{
+				lblMessage.Text = $"Login failed {userId}";
+			}
+		}
 
-		SemanticScreenReader.Announce(CounterBtn.Text);
+		private void OnCancelClicked(object? sender, EventArgs e)
+		{
+			txtUserName.Text = string.Empty;
+			txtPassword.Text = string.Empty;
+			lblMessage.Text = string.Empty;
+		}
 	}
 }
