@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RSVP_Project.EventsPage"
+             Title="Events">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="15">
+
+            <Label
+                Text="RSVP Events"
+                FontSize="28"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"/>
+
+            <Label
+                x:Name="lblUserStatus"
+                FontSize="16"
+                HorizontalOptions="Center"/>
+
+            <Grid
+                ColumnDefinitions="*,*,*"
+                ColumnSpacing="5">
+
+                <Button
+                    Text="All Events"
+                    Grid.Column="0"
+                    Clicked="OnAllEventsClicked"/>
+
+                <Button
+                    x:Name="btnAttending"
+                    Text="Attending"
+                    Grid.Column="1"
+                    Clicked="OnAttendingClicked"/>
+
+                <Button
+                    x:Name="btnHosting"
+                    Text="Hosting"
+                    Grid.Column="2"
+                    Clicked="OnHostingClicked"/>
+
+            </Grid>
+
+            <Label
+                x:Name="lblListTitle"
+                Text="All Events"
+                FontSize="22"
+                FontAttributes="Bold"/>
+
+            <VerticalStackLayout
+                x:Name="eventList"
+                Spacing="10"/>
+
+            <Button
+                x:Name="btnAddEvent"
+                Text="Add Event"
+                Clicked="OnAddEventClicked"/>
+
+            <Button
+                Text="Log Out"
+                Clicked="OnLogoutClicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

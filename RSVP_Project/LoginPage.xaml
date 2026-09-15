@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RSVP_Project.LoginPage"
+             Title="Login">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="20">
+
+            <Label
+                Text="RSVP Event App"
+                FontSize="32"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"/>
+
+            <Label
+                Text="Login"
+                FontSize="24"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"/>
+
+            <Label Text="User Name"/>
+
+            <Entry
+                x:Name="txtUserName"
+                Placeholder="Enter user name"/>
+
+            <Label Text="Password"/>
+
+            <Entry
+                x:Name="txtPassword"
+                Placeholder="Enter password"
+                IsPassword="True"/>
+
+            <Button
+                Text="Login"
+                Clicked="OnLoginClicked"/>
+
+            <Button
+                Text="Continue as Guest"
+                Clicked="OnGuestClicked"/>
+
+            <Button
+                Text="Create Account"
+                Clicked="OnCreateAccountClicked"/>
+
+            <Label
+                x:Name="lblMessage"
+                FontSize="16"
+                HorizontalOptions="Center"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RSVP_Project.EventDetailsPage"
+             Title="Event Details">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="15">
+
+            <Label
+                Text="Event Details"
+                FontSize="28"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"/>
+
+            <Label
+                x:Name="lblEventName"
+                FontSize="24"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"/>
+
+            <Label
+                Text="Hosted By:"
+                FontAttributes="Bold"/>
+
+            <Label
+                x:Name="lblHostName"/>
+
+            <Label
+                Text="Location:"
+                FontAttributes="Bold"/>
+
+            <Label
+                x:Name="lblLocation"/>
+
+            <Label
+                Text="Date and Time:"
+                FontAttributes="Bold"/>
+
+            <Label
+                x:Name="lblDateTime"/>
+
+            <Label
+                Text="Maximum Attendees:"
+                FontAttributes="Bold"/>
+
+            <Label
+                x:Name="lblMaximum"/>
+
+            <Label
+                Text="Current Attendees:"
+                FontAttributes="Bold"/>
+
+            <Label
+                x:Name="lblCurrent"/>
+
+            <Label
+                Text="RSVP Deadline:"
+                FontAttributes="Bold"/>
+
+            <Label
+                x:Name="lblDeadline"/>
+
+            <Label
+                Text="Who's Coming"
+                FontSize="20"
+                FontAttributes="Bold"/>
+
+            <Label
+                x:Name="lblAttendees"/>
+
+            <Button
+                Text="RSVP for this Event"
+                Clicked="OnRSVPClicked"/>
+
+            <Button
+                Text="Go Back"
+                Clicked="OnGoBackClicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
