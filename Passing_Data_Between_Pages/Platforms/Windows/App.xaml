@@ -1,0 +1,8 @@
+﻿<maui:MauiWinUIApplication
+    x:Class="Passing_Data_Between_Pages.WinUI.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:maui="using:Microsoft.Maui"
+    xmlns:local="using:Passing_Data_Between_Pages.WinUI">
+
+</maui:MauiWinUIApplication>
