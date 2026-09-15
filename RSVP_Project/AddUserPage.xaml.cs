@@ -11,6 +11,7 @@ public partial class AddUserPage : ContentPage
     {
         if (string.IsNullOrWhiteSpace(txtName.Text) ||
             string.IsNullOrWhiteSpace(txtEmail.Text) ||
+            string.IsNullOrWhiteSpace(txtUserName.Text) ||
             string.IsNullOrWhiteSpace(txtPassword.Text) ||
             string.IsNullOrWhiteSpace(txtPhone.Text))
         {

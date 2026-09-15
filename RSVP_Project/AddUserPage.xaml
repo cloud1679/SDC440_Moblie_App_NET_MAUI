@@ -26,6 +26,12 @@
                 Placeholder="Enter your email"
                 Keyboard="Email"/>
 
+            <Label Text="User Name"/>
+
+            <Entry
+                x:Name="txtUserName"
+                Placeholder="Choose a user name"/>
+
             <Label Text="Password"/>
             <Entry
                 x:Name="txtPassword"
