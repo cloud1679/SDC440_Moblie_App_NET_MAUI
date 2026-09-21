@@ -2,6 +2,8 @@ namespace RSVP_Project;
 
 public partial class AddUserPage : ContentPage
 {
+    private readonly AppDatabase database = new AppDatabase();
+
     public AddUserPage()
     {
         InitializeComponent();
@@ -10,8 +12,8 @@ public partial class AddUserPage : ContentPage
     private async void OnAddClicked(object? sender, EventArgs e)
     {
         if (string.IsNullOrWhiteSpace(txtName.Text) ||
-            string.IsNullOrWhiteSpace(txtEmail.Text) ||
             string.IsNullOrWhiteSpace(txtUserName.Text) ||
+            string.IsNullOrWhiteSpace(txtEmail.Text) ||
             string.IsNullOrWhiteSpace(txtPassword.Text) ||
             string.IsNullOrWhiteSpace(txtPhone.Text))
         {
@@ -19,8 +21,21 @@ public partial class AddUserPage : ContentPage
             return;
         }
 
-        // Saving user data will be added later.
-        lblMessage.Text = string.Empty;
+        User newUser = new User
+        {
+            Name = txtName.Text,
+            UserName = txtUserName.Text,
+            Email = txtEmail.Text,
+            Password = txtPassword.Text,
+            PhoneNumber = txtPhone.Text
+        };
+
+        await database.AddUserAsync(newUser);
+
+        await DisplayAlertAsync(
+            "Account Created",
+            "Your account was created successfully.",
+            "OK");
 
         await Navigation.PopAsync();
     }
