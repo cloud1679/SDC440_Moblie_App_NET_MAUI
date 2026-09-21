@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSVP_Project", "RSVP_Projec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Local_Data_Storage_and_Access", "Local_Data_Storage_and_Access\Local_Data_Storage_and_Access.csproj", "{45E58461-F1B8-49D8-B17D-A3CCF35BBD9A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store_and_Retrieve_Date_SQLite", "Store_and_Retrieve_Date_SQLite\Store_and_Retrieve_Date_SQLite.csproj", "{735BD480-9A16-4750-88D4-1ED0B53620DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,18 @@ Global
 		{45E58461-F1B8-49D8-B17D-A3CCF35BBD9A}.Release|x64.Build.0 = Release|Any CPU
 		{45E58461-F1B8-49D8-B17D-A3CCF35BBD9A}.Release|x86.ActiveCfg = Release|Any CPU
 		{45E58461-F1B8-49D8-B17D-A3CCF35BBD9A}.Release|x86.Build.0 = Release|Any CPU
+		{735BD480-9A16-4750-88D4-1ED0B53620DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{735BD480-9A16-4750-88D4-1ED0B53620DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{735BD480-9A16-4750-88D4-1ED0B53620DF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{735BD480-9A16-4750-88D4-1ED0B53620DF}.Debug|x64.Build.0 = Debug|Any CPU
+		{735BD480-9A16-4750-88D4-1ED0B53620DF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{735BD480-9A16-4750-88D4-1ED0B53620DF}.Debug|x86.Build.0 = Debug|Any CPU
+		{735BD480-9A16-4750-88D4-1ED0B53620DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{735BD480-9A16-4750-88D4-1ED0B53620DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{735BD480-9A16-4750-88D4-1ED0B53620DF}.Release|x64.ActiveCfg = Release|Any CPU
+		{735BD480-9A16-4750-88D4-1ED0B53620DF}.Release|x64.Build.0 = Release|Any CPU
+		{735BD480-9A16-4750-88D4-1ED0B53620DF}.Release|x86.ActiveCfg = Release|Any CPU
+		{735BD480-9A16-4750-88D4-1ED0B53620DF}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

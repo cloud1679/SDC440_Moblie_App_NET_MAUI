@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:Store_and_Retrieve_Date_SQLite.Models"
+             x:Class="Store_and_Retrieve_Date_SQLite.MainPage">
+
+    <VerticalStackLayout Padding="30"
+            Spacing="15">
+
+        <Label
+            Text="Richard Burns - SQLite Item Database"
+            Style="{StaticResource Headline}"
+            SemanticProperties.HeadingLevel="Level1"/>
+
+        <Label
+            Text="Please provide the following information:"
+            FontAttributes="Bold"/>
+
+        <Label Text="Item ID"/>
+
+        <Entry
+            x:Name="txtItemID"
+            Placeholder="Enter Item ID"
+            Keyboard="Numeric"/>
+
+        <Label Text="Item Name"/>
+
+        <Entry
+            x:Name="txtItemName"
+            Placeholder="Enter Item Name"/>
+
+        <Label Text="Item Description"/>
+
+        <Entry
+            x:Name="txtItemDescription"
+            Placeholder="Enter Item Description"/>
+
+        <Button
+            x:Name="btnSave"
+            Text="Save"
+            HorizontalOptions="Center"
+            Clicked="OnSaveClicked"/>
+
+        <Label
+            Text="Stored Items"
+            FontAttributes="Bold"
+            FontSize="18"/>
+
+        <CollectionView
+            ItemsSource="{Binding Items}"
+            VerticalOptions="Fill">
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:Item">
+
+                    <Grid
+                        ColumnDefinitions="Auto,*,*"
+                        Padding="10"
+                        ColumnSpacing="15">
+
+                        <Label
+                            Grid.Column="0"
+                            Text="{Binding ItemID}"/>
+
+                        <Label
+                            Grid.Column="1"
+                            Text="{Binding ItemName}"/>
+
+                        <Label
+                            Grid.Column="2"
+                            Text="{Binding ItemDescription}"/>
+
+                    </Grid>
+
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+        </CollectionView>
+
+    </VerticalStackLayout>
+
+</ContentPage>
