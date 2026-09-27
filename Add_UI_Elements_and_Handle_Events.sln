@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Local_Data_Storage_and_Acce
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store_and_Retrieve_Date_SQLite", "Store_and_Retrieve_Date_SQLite\Store_and_Retrieve_Date_SQLite.csproj", "{735BD480-9A16-4750-88D4-1ED0B53620DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authenticate_User_Web_Service", "Authenticate_User_Web_Service\Authenticate_User_Web_Service.csproj", "{6C45D60D-5824-40FB-A783-1309FE194A63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiBasicAuth", "MauiBasicAuth\MauiBasicAuth.csproj", "{60BCEDEC-6A86-45D9-A196-59C676A35226}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +87,30 @@ Global
 		{735BD480-9A16-4750-88D4-1ED0B53620DF}.Release|x64.Build.0 = Release|Any CPU
 		{735BD480-9A16-4750-88D4-1ED0B53620DF}.Release|x86.ActiveCfg = Release|Any CPU
 		{735BD480-9A16-4750-88D4-1ED0B53620DF}.Release|x86.Build.0 = Release|Any CPU
+		{6C45D60D-5824-40FB-A783-1309FE194A63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C45D60D-5824-40FB-A783-1309FE194A63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C45D60D-5824-40FB-A783-1309FE194A63}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6C45D60D-5824-40FB-A783-1309FE194A63}.Debug|x64.Build.0 = Debug|Any CPU
+		{6C45D60D-5824-40FB-A783-1309FE194A63}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6C45D60D-5824-40FB-A783-1309FE194A63}.Debug|x86.Build.0 = Debug|Any CPU
+		{6C45D60D-5824-40FB-A783-1309FE194A63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C45D60D-5824-40FB-A783-1309FE194A63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C45D60D-5824-40FB-A783-1309FE194A63}.Release|x64.ActiveCfg = Release|Any CPU
+		{6C45D60D-5824-40FB-A783-1309FE194A63}.Release|x64.Build.0 = Release|Any CPU
+		{6C45D60D-5824-40FB-A783-1309FE194A63}.Release|x86.ActiveCfg = Release|Any CPU
+		{6C45D60D-5824-40FB-A783-1309FE194A63}.Release|x86.Build.0 = Release|Any CPU
+		{60BCEDEC-6A86-45D9-A196-59C676A35226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60BCEDEC-6A86-45D9-A196-59C676A35226}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60BCEDEC-6A86-45D9-A196-59C676A35226}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{60BCEDEC-6A86-45D9-A196-59C676A35226}.Debug|x64.Build.0 = Debug|Any CPU
+		{60BCEDEC-6A86-45D9-A196-59C676A35226}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{60BCEDEC-6A86-45D9-A196-59C676A35226}.Debug|x86.Build.0 = Debug|Any CPU
+		{60BCEDEC-6A86-45D9-A196-59C676A35226}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60BCEDEC-6A86-45D9-A196-59C676A35226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60BCEDEC-6A86-45D9-A196-59C676A35226}.Release|x64.ActiveCfg = Release|Any CPU
+		{60BCEDEC-6A86-45D9-A196-59C676A35226}.Release|x64.Build.0 = Release|Any CPU
+		{60BCEDEC-6A86-45D9-A196-59C676A35226}.Release|x86.ActiveCfg = Release|Any CPU
+		{60BCEDEC-6A86-45D9-A196-59C676A35226}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

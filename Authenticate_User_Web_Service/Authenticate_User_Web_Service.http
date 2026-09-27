@@ -1,0 +1,12 @@
+@Authenticate_User_Web_Service_HostAddress = http://localhost:5049
+
+### Without credentials: expect 401 Unauthorized
+GET {{Authenticate_User_Web_Service_HostAddress}}/api/Values
+
+### Valid credentials (instructor01:Password01): expect 200 and two values
+GET {{Authenticate_User_Web_Service_HostAddress}}/api/Values
+Authorization: Basic aW5zdHJ1Y3RvcjAxOlBhc3N3b3JkMDE=
+
+### Malformed credentials: expect 401 Unauthorized
+GET {{Authenticate_User_Web_Service_HostAddress}}/api/Values
+Authorization: Basic invalid-base64
