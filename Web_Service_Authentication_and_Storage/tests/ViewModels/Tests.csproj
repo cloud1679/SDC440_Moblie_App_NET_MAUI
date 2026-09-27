@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+<PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net10.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable></PropertyGroup>
+<ItemGroup>
+<Compile Include="../../../Web_Serice_Authentication_and_Storage_App/ViewModels/*.cs" />
+<Compile Include="../../../Web_Serice_Authentication_and_Storage_App/Models/*.cs" />
+<Compile Include="../../../Web_Serice_Authentication_and_Storage_App/DataAccess/IApiService.cs" />
+</ItemGroup>
+</Project>

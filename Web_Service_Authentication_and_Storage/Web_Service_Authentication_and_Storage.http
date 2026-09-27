@@ -1,0 +1,21 @@
+@host = http://localhost:5027
+
+### Successful Basic login: Burns01 / Password1
+GET {{host}}/api/auth/login
+Authorization: Basic QnVybnMwMTpQYXNzd29yZDE=
+
+### Missing credentials: 401
+GET {{host}}/api/auth/login
+
+### Retrieve all stored items (no authentication required)
+GET {{host}}/api/items
+
+### Add an item (repeat the same ID to receive 409 Conflict)
+POST {{host}}/api/items
+Content-Type: application/json
+
+{
+  "itemId": "1001",
+  "itemName": "Notebook",
+  "itemDescription": "Blue spiral notebook"
+}

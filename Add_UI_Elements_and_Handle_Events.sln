@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authenticate_User_Web_Servi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiBasicAuth", "MauiBasicAuth\MauiBasicAuth.csproj", "{60BCEDEC-6A86-45D9-A196-59C676A35226}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web_Service_Authentication_and_Storage", "Web_Service_Authentication_and_Storage\Web_Service_Authentication_and_Storage.csproj", "{E094E7A3-14F2-40F4-ABCE-0D531A1EE739}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web_Serice_Authentication_and_Storage_App", "Web_Serice_Authentication_and_Storage_App\Web_Serice_Authentication_and_Storage_App.csproj", "{8DB7301F-F438-47D9-B0F0-47E0F741708D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +115,30 @@ Global
 		{60BCEDEC-6A86-45D9-A196-59C676A35226}.Release|x64.Build.0 = Release|Any CPU
 		{60BCEDEC-6A86-45D9-A196-59C676A35226}.Release|x86.ActiveCfg = Release|Any CPU
 		{60BCEDEC-6A86-45D9-A196-59C676A35226}.Release|x86.Build.0 = Release|Any CPU
+		{E094E7A3-14F2-40F4-ABCE-0D531A1EE739}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E094E7A3-14F2-40F4-ABCE-0D531A1EE739}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E094E7A3-14F2-40F4-ABCE-0D531A1EE739}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E094E7A3-14F2-40F4-ABCE-0D531A1EE739}.Debug|x64.Build.0 = Debug|Any CPU
+		{E094E7A3-14F2-40F4-ABCE-0D531A1EE739}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E094E7A3-14F2-40F4-ABCE-0D531A1EE739}.Debug|x86.Build.0 = Debug|Any CPU
+		{E094E7A3-14F2-40F4-ABCE-0D531A1EE739}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E094E7A3-14F2-40F4-ABCE-0D531A1EE739}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E094E7A3-14F2-40F4-ABCE-0D531A1EE739}.Release|x64.ActiveCfg = Release|Any CPU
+		{E094E7A3-14F2-40F4-ABCE-0D531A1EE739}.Release|x64.Build.0 = Release|Any CPU
+		{E094E7A3-14F2-40F4-ABCE-0D531A1EE739}.Release|x86.ActiveCfg = Release|Any CPU
+		{E094E7A3-14F2-40F4-ABCE-0D531A1EE739}.Release|x86.Build.0 = Release|Any CPU
+		{8DB7301F-F438-47D9-B0F0-47E0F741708D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DB7301F-F438-47D9-B0F0-47E0F741708D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DB7301F-F438-47D9-B0F0-47E0F741708D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8DB7301F-F438-47D9-B0F0-47E0F741708D}.Debug|x64.Build.0 = Debug|Any CPU
+		{8DB7301F-F438-47D9-B0F0-47E0F741708D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8DB7301F-F438-47D9-B0F0-47E0F741708D}.Debug|x86.Build.0 = Debug|Any CPU
+		{8DB7301F-F438-47D9-B0F0-47E0F741708D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DB7301F-F438-47D9-B0F0-47E0F741708D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DB7301F-F438-47D9-B0F0-47E0F741708D}.Release|x64.ActiveCfg = Release|Any CPU
+		{8DB7301F-F438-47D9-B0F0-47E0F741708D}.Release|x64.Build.0 = Release|Any CPU
+		{8DB7301F-F438-47D9-B0F0-47E0F741708D}.Release|x86.ActiveCfg = Release|Any CPU
+		{8DB7301F-F438-47D9-B0F0-47E0F741708D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
