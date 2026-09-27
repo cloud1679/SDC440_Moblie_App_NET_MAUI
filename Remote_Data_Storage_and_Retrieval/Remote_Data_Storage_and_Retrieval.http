@@ -1,0 +1,6 @@
+@Remote_Data_Storage_and_Retrieval_HostAddress = http://localhost:5156
+
+GET {{Remote_Data_Storage_and_Retrieval_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,64 +1,39 @@
-using SQLite;
 using Local_Data_Storage_and_Access.Models;
+using Newtonsoft.Json;
+using System.Text;
 
 namespace Local_Data_Storage_and_Access.DataAccess
 {
     public class PersonData
     {
-        SQLiteAsyncConnection? database;
+        private static readonly HttpClient client = new HttpClient();
 
-        async Task Init()
-        {
-            if (database is not null)
-            {
-                return;
-            }
-
-            database = new SQLiteAsyncConnection(
-                DatabaseConstants.DatabasePath,
-                DatabaseConstants.Flags);
-
-            await database.CreateTableAsync<Person>();
-        }
+        private const string ApiUrl =
+            "http://localhost:5156/api/Person";
 
         public async Task<List<Person>> GetPeopleAsync()
         {
-            await Init();
+            using var response = await client.GetAsync(ApiUrl);
+            response.EnsureSuccessStatusCode();
 
-            return await database!.Table<Person>().ToListAsync();
-        }
+            var content = await response.Content.ReadAsStringAsync();
 
-        public async Task<Person?> GetPersonAsync(int id)
-        {
-            await Init();
-
-            return await database!
-                .Table<Person>()
-                .Where(i => i.ID == id)
-                .FirstOrDefaultAsync();
+            return JsonConvert.DeserializeObject<List<Person>>(content)
+                ?? new List<Person>();
         }
 
         public async Task<int> SavePersonAsync(Person person)
         {
-            await Init();
+            var json = JsonConvert.SerializeObject(person);
 
-            if (person.ID != 0)
-            {
-                // Update an existing person
-                return await database!.UpdateAsync(person);
-            }
-            else
-            {
-                // Save a new person
-                return await database!.InsertAsync(person);
-            }
-        }
+            using var content = new StringContent(
+                json,
+                Encoding.UTF8,
+                "application/json");
 
-        public async Task<int> DeletePersonAsync(Person person)
-        {
-            await Init();
+            using var response = await client.PostAsync(ApiUrl, content);
 
-            return await database!.DeleteAsync(person);
+            return response.IsSuccessStatusCode ? 1 : 0;
         }
     }
 }
