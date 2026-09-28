@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web_Service_Authentication_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web_Serice_Authentication_and_Storage_App", "Web_Serice_Authentication_and_Storage_App\Web_Serice_Authentication_and_Storage_App.csproj", "{8DB7301F-F438-47D9-B0F0-47E0F741708D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web_Data_Storage_and_Access_Project", "Web_Data_Storage_and_Access_Project\Web_Data_Storage_and_Access_Project.csproj", "{309459DF-4FD1-43FF-89E6-457F9678C38C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -139,6 +141,18 @@ Global
 		{8DB7301F-F438-47D9-B0F0-47E0F741708D}.Release|x64.Build.0 = Release|Any CPU
 		{8DB7301F-F438-47D9-B0F0-47E0F741708D}.Release|x86.ActiveCfg = Release|Any CPU
 		{8DB7301F-F438-47D9-B0F0-47E0F741708D}.Release|x86.Build.0 = Release|Any CPU
+		{309459DF-4FD1-43FF-89E6-457F9678C38C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{309459DF-4FD1-43FF-89E6-457F9678C38C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{309459DF-4FD1-43FF-89E6-457F9678C38C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{309459DF-4FD1-43FF-89E6-457F9678C38C}.Debug|x64.Build.0 = Debug|Any CPU
+		{309459DF-4FD1-43FF-89E6-457F9678C38C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{309459DF-4FD1-43FF-89E6-457F9678C38C}.Debug|x86.Build.0 = Debug|Any CPU
+		{309459DF-4FD1-43FF-89E6-457F9678C38C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{309459DF-4FD1-43FF-89E6-457F9678C38C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{309459DF-4FD1-43FF-89E6-457F9678C38C}.Release|x64.ActiveCfg = Release|Any CPU
+		{309459DF-4FD1-43FF-89E6-457F9678C38C}.Release|x64.Build.0 = Release|Any CPU
+		{309459DF-4FD1-43FF-89E6-457F9678C38C}.Release|x86.ActiveCfg = Release|Any CPU
+		{309459DF-4FD1-43FF-89E6-457F9678C38C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

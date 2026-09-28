@@ -1,0 +1,6 @@
+@Web_Data_Storage_and_Access_Project_HostAddress = http://localhost:5154
+
+GET {{Web_Data_Storage_and_Access_Project_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
