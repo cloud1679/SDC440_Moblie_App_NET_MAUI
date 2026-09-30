@@ -11,6 +11,8 @@
         <Label
             Text="Richard Burns - Local Storage"
             Style="{StaticResource Headline}"
+            FontSize="Title"
+            FontAttributes="Bold,Italic"
             SemanticProperties.HeadingLevel="Level1"/>
 
         <Grid
@@ -63,7 +65,7 @@
 
         <Button
             x:Name="btnSave"
-            Text="Save Person"
+            Text="Save"
             HorizontalOptions="Center"
             Clicked="OnSaveClicked"/>
 
